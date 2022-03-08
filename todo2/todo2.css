@@ -1,0 +1,69 @@
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .Wallettest {
+    border: 2px solid black;
+    width: 265px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    padding-left: 1rem;
+  }
+  
+  .options {
+    margin-top: 10em;
+    display: flex;
+  }
+  
+  .options-input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .buttonselect {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  ul#transactionList {
+    height: 250px;
+    flex-wrap: nowrap;
+    padding-inline-start: 1em;
+  }
+  
+  .hidecategory {
+    margin-left: 1em;
+    display: none;
+    width: 12em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    background: rgb(155, 153, 153);
+  }
+  .btn.btn-outline-success.btn-lg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    font-size: 1rem;
+    width: 10em;
+    margin: 3px;
+  }
+  .btn.btn-outline-danger.btn-lg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    font-size: 1rem;
+    width: 10em;
+    margin: 3px;
+  }
+  

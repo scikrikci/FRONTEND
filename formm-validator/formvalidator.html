@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formvalidator.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">
+            <h1>Valitador</h1>
+        </div>
+        <div class="form-container">
+            <form id="form">
+                <div class="form-group">
+                    <label for="username">UserName</label>
+                    <input type="text" class="form-control" id="username" placeholder="UserName">
+                    <div id="alert"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                    <div id="alert"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <div id="alert"></div>
+                </div>
+                <div class="form-group">
+                    <label for="repassword">RePassword</label>
+                    <input type="password" class="form-control" id="repassword" placeholder="RePassword">
+                    <div id="alert"></div>
+                </div>
+                <button type="submit" id="submit-btn">Register</button>
+         </form>
+        </div>
+    </div>
+    <script src="formvalidator.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+*{
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    height: 100%;
+    width: 100%;
+	vertical-align: baseline;
+    
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+    
+}
+html,body {
+	line-height: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(57, 105, 105);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container{
+    position: absolute;
+    width: 40rem;
+    height: auto;
+    top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container  .title{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.container h1{
+    text-align: center;
+    width: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+form{
+    display: flex;
+    margin-bottom: 1rem;
+}
+input{
+    width: 100%;
+    height: 2.5rem;
+    border-radius:0.4rem 0 0 0.4rem;
+    border: 0.01rem solid rgb(47, 135, 170);
+    color: black;
+    padding: 0 1rem;
+}
+.input-group input::placeholder{
+    color: black;
+    font-size: 1rem;
+    font-weight:lighter;
+    transition: 500ms;
+}
+form button{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid rgb(32, 155, 204);
+    background: rgb(32, 155, 204);
+    border-radius: 0 0.4rem 0.4rem 0;
+    transition: 300ms;
+}
+form button:hover{
+    background: rgb(0, 168, 235);
+    border: 0.1rem solid rgb(0, 168, 235);
+}
+
+form button:active{
+    background: rgb(212, 213, 214);
+}
+
+.todo_container{
+    width: 100%;
+    height: auto;
+}
+.todo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+
+}
+
+.todo_container .todo-left{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.todo_container .todo-left input{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0;
+}
+
+.todo_container .todo-left span{
+    width: auto;
+    height: auto;
+    font-size: 1.2rem;
+}
+
+
+.todo-right{
+    width: auto;
+    height: 2rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.todo-right .todo-delete , .todo-edit{
+    width: 4rem;
+    height: 1.7rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+
+
+.todo-cb:checked ~ .todo-text{
+    text-decoration:line-through ;
+    color: rgb(185, 185, 185);
+}
+
+
+
+
+
+
+
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ul li{
+    width: auto;
+}
+
+.active{
+    color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
