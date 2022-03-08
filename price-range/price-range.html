@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="price-range.css">
+    <title>Price Range</title>
+</head>
+<body>
+<div class="container">
+    <h1>Price Range</h1>
+    
+    <div class="min-max">
+        <div class="min">
+            <label>Min</label>
+            <div id="min-value" class="range"></div>
+        </div>
+        <div class="max">
+            <label>Max</label>
+            <div id="max-value" class="range"></div>
+        </div>
+    </div>
+    <div class="min-max-range">
+        <input type="range"min="0" max="5000" value="500" class="range" id="min">
+        <input type="range"min="5001" max="10000" value="7000" class="range" id="max">
+    </div>
+    
+</div>
+    <script src="price-range.js"></script>
+</body>
+</html>
