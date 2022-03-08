@@ -1,0 +1,326 @@
+*{
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+    
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    height: 100%;
+    width: 100%;
+	vertical-align: baseline;
+    font-family:cursive;
+    
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+    
+}
+html,body {
+	line-height: 1;
+    
+    display: flex;
+    
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* _____________  SİDE - LEFT _____________*/
+
+.side-left{
+    width: 23rem;
+    height: 100%;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+}
+
+.side-left .logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    color: rgb(51,51,53);
+}
+.side-left .logo span{
+    color: rgb(225, 0, 255);
+}
+
+.side-left .navbar{
+    width: 100%;
+    height: auto;
+}
+.side-left .navbar ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.side-left .navbar ul li {
+    width: 100%;
+    height: auto;
+    font-size: 1.1rem;
+    color: rgb(57 ,42 ,74);
+
+    display: flex;
+    align-items: center;
+}
+.side-left .navbar ul li ion-icon{
+    font-size: 1.4rem;
+    margin-right: 0.7rem;
+    color: rgb(57 ,42 ,74);
+}
+.side-left .navbar ul li ion-icon:nth-child(2){
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/* _____________  SİDE - MAİN _____________*/
+
+.side-main{
+    width: 100%;
+    height: 98%;
+    background: rgb(246, 247, 251);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+
+.side-main h1{
+    font-size: 2.5rem;
+    width: auto;
+    height: auto;
+    color: rgb(51,51,53);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.side-main p {
+    width: 100%;
+    height: auto;
+    color: rgb(211,213,220);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.2rem;
+}
+.side-main p img{
+    width: 1.5rem;
+    height: 1.5rem;
+} 
+
+
+.side-main .selectable-title{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.side-main .selectable-title h1{
+    font-size: 1rem;
+    margin: 0;
+    font-weight: bold;
+
+    margin-bottom: 1.5rem;
+}
+
+
+.recent-class-box-container{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-class-box-container .recent-class-box{
+    width: 9.5rem;
+    height: 12rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.recent-class-box-container .recent-class-box:nth-child(1){
+    background-image: linear-gradient(to right, rgb(0, 60, 255) ,rgb(58, 100, 236),rgb(0, 60, 255));
+}
+.recent-class-box-container .recent-class-box:nth-child(2){
+    background: rgb(26, 184, 176);
+}
+.recent-class-box-container .recent-class-box:nth-child(3){
+    background: rgb(211, 48, 148);
+}
+.recent-class-box .image-container{
+    width: 100%;
+    height: 5rem;
+    border-radius: 0.7rem;
+    background: chocolate;
+}
+
+.recent-class-box .title{
+    width: 100%;
+    height: auto;
+}
+.recent-class-box .title h2,p{
+    width: 100%;
+    height: auto;
+}
+
+
+.recent-class-box .down{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.recent-class-box .down .looking-users{
+    width: 5rem;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.looking-users .looking-users-box{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1.5rem;
+    background: rgb(255, 255, 255);
+    padding: 0.01rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.looking-users .looking-users-box ion-icon{
+    font-size: 1.5rem;
+    color: black;
+}
+.looking-users .looking-users-box ion-icon .last-icon{
+    font-size: 1rem;
+}
+.looking-users .looking-users-box:nth-child(1){
+    position: absolute;
+    left: 0;
+}
+.looking-users .looking-users-box:nth-child(2){
+    position: absolute;
+    left: 1.1rem;
+}
+.looking-users .looking-users-box:nth-child(3){
+    position: absolute;
+    left: 2.1rem;
+}
+.looking-users .looking-users-box:nth-child(4){   
+    position: absolute;
+    left: 3.1rem;
+}
+
+
+.recent-class-box .down .other-user-box{
+    width: 2rem;
+    height: 2rem;
+    background: #eee;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* _____________  SİDE - RIGHT _____________*/
+
+.side-right{
+    margin-left: 1rem;
+    width: 140rem;
+    height: 100%;
+    background: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
